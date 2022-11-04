@@ -89,7 +89,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                 ? Text(
                     widget.title,
                     style: fonts.subtitle1.copyWith(
-                      color: widget.error == null ? colors.text : colors.error,
+                      color: widget.error == null ? colors.text : colors.red,
                     ),
                   )
                 : const SizedBox(),
@@ -98,7 +98,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                 ? Text(
                     widget.titleHintText,
                     style: fonts.caption.copyWith(
-                      color: colors.grey,
+                      color: colors.subTextBlue,
                     ),
                   )
                 : const SizedBox(),
@@ -161,7 +161,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                   color: colors.bodyText,
                 ),
                 errorText: widget.error,
-                errorStyle: fonts.caption.copyWith(color: colors.error),
+                errorStyle: fonts.caption.copyWith(color: colors.red),
                 contentPadding:
                     EdgeInsets.only(left: 16.w, top: 12.h, right: 12.w),
               ),
@@ -178,7 +178,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                         style: fonts.bodyText1.copyWith(
                             color: widget.error == null
                                 ? colors.bodyText
-                                : colors.error,
+                                : colors.red,
                             fontSize: 12.sp),
                       ),
                     ],

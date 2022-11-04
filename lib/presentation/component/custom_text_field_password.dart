@@ -48,7 +48,7 @@ class _CustomTextFieldPasswordState extends State<CustomTextFieldPassword> {
               ? Text(
                   widget.title,
                   style: fonts.subtitle1.copyWith(
-                    color: widget.error == null ? colors.text : colors.error,
+                    color: widget.error == null ? colors.text : colors.red,
                   ),
                 )
               : Container(),
@@ -68,7 +68,7 @@ class _CustomTextFieldPasswordState extends State<CustomTextFieldPassword> {
                           isUnViziable
                               ? Icons.visibility
                               : Icons.visibility_off,
-                          color: colors.icon,
+                          color: colors.black,
                         ),
                       )
                     : null,
@@ -92,7 +92,7 @@ class _CustomTextFieldPasswordState extends State<CustomTextFieldPassword> {
                   color: colors.bodyText,
                 ),
                 errorText: widget.error,
-                errorStyle: fonts.caption.copyWith(color: colors.error),
+                errorStyle: fonts.caption.copyWith(color: colors.red),
                 contentPadding: EdgeInsets.only(left: 12.w),
               ),
             ),

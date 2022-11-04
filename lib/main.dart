@@ -14,9 +14,9 @@ void main() async {
         designSize: const Size(375, 812),
         builder: () {
           return EasyLocalization(
-            supportedLocales: const [Locale('en', 'US')],
+            supportedLocales: const [Locale('en', 'US'),Locale('uz', 'UZ')],
             path: 'assets/translation',
-            fallbackLocale: const Locale('en', 'US'),
+            fallbackLocale: const Locale('uz', 'UZ'),
             child: AppWidget(
               dbService: AppInit.dbService!,
               connectivityX: AppInit.connectivityX!,

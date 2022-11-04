@@ -29,7 +29,7 @@ class FontSet {
       subtitle2: Style.semiBold16(size: 16.sp),
       bodyText1: Style.regular14(size: 14.sp, color: colors.text),
       bodyText2: Style.regular16(size: 16.sp, color: colors.text),
-      caption: Style.regular12(size: 12.sp),
+      caption: Style.regular12(size: 12.sp, color: colors.subTextBlue),
       headline2: Style.bold16(size: 16.sp, color: colors.text),
     );
   }

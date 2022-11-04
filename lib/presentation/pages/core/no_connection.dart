@@ -32,7 +32,7 @@ class _NoConnectionState extends State<NoConnection> {
   Widget build(BuildContext context) {
     return ThemeWrapper(builder: (context, colors, fonts, icons, c) {
       return Scaffold(
-        backgroundColor: colors.backgroundColor,
+        backgroundColor: colors.white,
         body: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(

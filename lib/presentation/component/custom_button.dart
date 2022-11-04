@@ -31,7 +31,7 @@ class CustomOutlinedButton extends StatelessWidget {
                 ),
               ),
               side: MaterialStateProperty.all<BorderSide>(
-                 BorderSide(color: Style.primary, width: 1),
+                const BorderSide(color: Style.primary, width: 1),
               ),
             ),
             child: Padding(
@@ -56,6 +56,7 @@ class CustomButton extends StatelessWidget {
   final bool isDisabled;
   final double borderWidth;
   final double verticalPadding;
+  final double borderRadius;
 
   const CustomButton({
     Key? key,
@@ -66,6 +67,7 @@ class CustomButton extends StatelessWidget {
     this.backgroundColor = const Color(0xff1D1D1D),
     this.borderWidth = 0.5,
     this.verticalPadding = 16,
+    this.borderRadius = 16,
   }) : super(key: key);
 
   @override
@@ -77,12 +79,12 @@ class CustomButton extends StatelessWidget {
         child: Container(
           width: double.infinity,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10.r),
+              borderRadius: BorderRadius.circular(borderRadius.r),
               border: Border.all(
                 color: isDisabled ? colors.white : colors.borderColor,
                 width: borderWidth.h,
               ),
-              color: isDisabled ? colors.grey : backgroundColor,
+              color: isDisabled ? colors.borderColor : backgroundColor,
               boxShadow: isDisabled
                   ? null
                   : const [
@@ -96,7 +98,7 @@ class CustomButton extends StatelessWidget {
               textAlign: TextAlign.center,
               style: Style.medium14(
                 size: 14.sp,
-                color: isDisabled ? colors.textV1 : titleColor,
+                color: isDisabled ? colors.text : titleColor,
               ),
             ),
           ),

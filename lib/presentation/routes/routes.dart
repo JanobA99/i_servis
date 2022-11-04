@@ -1,6 +1,6 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
-import 'package:i_servis/presentation/pages/auth/onboarding.dart';
+import 'package:i_servis/presentation/pages/auth/onboarding/onboarding.dart';
 
 import '../../domain/auth/auth_failure.dart';
 import '../../infrastructure/services/db_service.dart';
