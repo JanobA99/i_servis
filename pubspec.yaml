@@ -55,7 +55,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^2.0.0
+  flutter_lints: ^2.0.1
   flutter_bloc_generator: ^1.0.0
   build_runner: ^2.1.4
   chopper_generator: ^4.0.2
